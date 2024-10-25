@@ -31,8 +31,9 @@ body {
 }
 
 /***** Navigation *****/
-.logo {
-    border-bottom: 1px solid var(--text-orange);
+.navbar .logo {
+    height: auto;
+    max-width: 100px;
 }
 
 .nav-link {
@@ -46,6 +47,10 @@ body {
 
 .nav-link:hover {
     color: #ededed;
+}
+
+ul li a {
+    font-family: 'Georgia', sans-serif;
 }
 
 /***** End Navigation *****/
@@ -63,7 +68,7 @@ body {
     max-width: 1500px;
 }
 
-.hero-content p{
+.hero-content p {
     font-size: 1rem;
 }
 
@@ -104,6 +109,10 @@ body {
 
 /** Media Queries for Hero Section **/
 @media (max-width: 768px) {
+    .navbar .logo {
+        max-width: 70px;
+    }
+
     .navbar a {
         font-size: .8rem;
     }
@@ -117,18 +126,17 @@ body {
     }
 
     .hero-section {
-        min-height: 80vh;
+        /* min-height: 80vh; */
         display: flex;
         align-items: center;
         justify-content: between;
     }
 
     .hero-content {
-        padding: 1rem;
         text-align: center;
     }
 
-    .hero-content .logo img{
+    .hero-content .logo img {
         max-width: 250px;
         height: auto;
     }
@@ -138,8 +146,13 @@ body {
         font-size: 1rem;
     }
 
+    .hero-text {
+        width: 75%;
+        padding-top: 20px;
+    }
+
     .hero-text p {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .hero-content button {
