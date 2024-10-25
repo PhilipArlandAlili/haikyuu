@@ -60,10 +60,21 @@ body {
     filter: saturate(1.9);
     width: 100%;
     height: auto;
+    max-width: 1500px;
 }
 
-.hero-content {
-    padding: 2rem 3rem;
+.hero-content p{
+    font-size: 1rem;
+}
+
+.hero-content button {
+    font-size: .8rem;
+    padding: 6px 50px;
+}
+
+.hero-content .logo img {
+    max-width: 400px;
+    height: auto;
 }
 
 .hero-content h1 {
@@ -117,8 +128,9 @@ body {
         text-align: center;
     }
 
-    .hero-content h1 {
-        font-size: 3rem;
+    .hero-content .logo img{
+        max-width: 250px;
+        height: auto;
     }
 
     .hero-content,
@@ -127,12 +139,11 @@ body {
     }
 
     .hero-text p {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .hero-content button {
-        font-size: 0.9rem;
-        width: 100%;
+        font-size: 0.7rem;
     }
 
     .hero-img img {
