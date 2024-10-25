@@ -1,0 +1,155 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-orange: #FF8C00;
+    --bg-orange: #FF8C00;
+    --a-hover: #ededed;
+}
+
+.text-orange {
+    color: var(--text-orange);
+}
+
+.font-haikyu {
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/***** Navigation *****/
+.logo {
+    border-bottom: 1px solid var(--text-orange);
+}
+
+.nav-link {
+    color: var(--text-orange);
+    font-weight: bold;
+}
+
+.bg-orange {
+    background-color: var(--bg-orange);
+}
+
+.nav-link:hover {
+    color: #ededed;
+}
+
+/***** End Navigation *****/
+
+/** Home Section **/
+.hero-section {
+    background-color: var(--bg-orange);
+    /* min-height: 80vh; */
+}
+
+.hero-img img {
+    filter: saturate(1.9);
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    padding: 2rem 3rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+}
+
+/** Overviiew Section **/
+.overview-content .overview {
+    padding: 40px;
+}
+
+/** Members Section **/
+.members-content,
+.overview-content {
+    padding: 1.5rem;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+
+.card {
+    border: 1px solid var(--bg-orange);
+}
+
+/** Media Queries for Hero Section **/
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: .8rem;
+    }
+
+    .navbar h3 {
+        font-size: 1rem;
+    }
+
+    .navbar button {
+        font-size: 0.9rem;
+    }
+
+    .hero-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: between;
+    }
+
+    .hero-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content,
+    .overview-content p {
+        font-size: 1rem;
+    }
+
+    .hero-text p {
+        font-size: .9rem;
+    }
+
+    .hero-content button {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .hero-img img {
+        padding-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .overview-content .overview {
+        padding: 0;
+    }
+
+    .overview-content h1 {
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: .7rem;
+    }
+}
